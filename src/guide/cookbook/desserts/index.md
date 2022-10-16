@@ -1,6 +1,6 @@
 ---
 layout: cookbook
-title: Menu for desserts and brekfast
+title: Menu for desserts and breakfast
 buttonStyle: fg-guide-chap
 backgroundStyle: bg-guide-chap
 ---
