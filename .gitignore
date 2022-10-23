@@ -19,3 +19,4 @@ _book
 /src/_site/*
 /*/.jekyll-cache/*
 Gemfile*
+**/.DS_Store
