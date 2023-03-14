@@ -28,8 +28,38 @@ listOfIcons: [["", ""], ["", ""]]
 {% endfor %}
 </select>
 
-<h3 id="frame-heading">Open letter</h3>
+<div class="container">
+  <h2>Open letter</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#welcome-letter">Welcome letter</a></li>
+    <li><a data-toggle="tab" href="#CV">Biography</a></li>
+    <li><a data-toggle="tab" href="#publications">Publications</a></li>
+  </ul>
 
-<div class="iframe-container">
-<iframe src="{{ '/about/team/Danielle/introduction.html' | prepend: site.baseurl }}"title="Welcome letter" id="iframe-id" class="responsive-iframe"></iframe>
+  <div class="tab-content">
+    <div id="welcome-letter" class="tab-pane fade in active">
+      <h3>Welcome letter</h3>
+      <p> Hello, my name is Danielle and I'm working on Project27. 
+        I was born in 1993 with a left sided hemiplegia, I am blind in my left eye and I have nystagmus in my right eye. I also have a learning disability. 
+        I work with people who have a learning disability and I really enjoy helping other people. 
+        While working I discovered I like to create video content and writing articles that people can learn from.</p>
+    </div>
+    <div id="CV" class="tab-pane fade">
+      <h3>Path to self-advocacy</h3>
+      <p>I am Danielle, a young woman with mild learning disabilities. 
+        I was an intern at Amaze and also a member of the Power Group (co run by Amaze/Speak Out) 
+        where I developed skills and confidence to speak up.  Using skills I learnt at Amaze, 
+        I went onto getting a paid job at Speak Out in 2019 as a project worker.
+        When lockdown hit, I was working at home with far less support than I was used to in the office
+         which is where I really blossomed. I decided to interview people about their experiences of lockdown, 
+         creating a series of films called "Speak Out with Danielle". I spoke to a range of people from local 
+         people with learning disabilities to the head of Learning Disability England.</p>
+    </div>
+    <div id="publications" class="tab-pane fade">
+      <h3>Publications</h3>
+      <p>I have grown a passion to write, review and share articles on learning disability and self-advocacy.
+        <br> 1. [50 years of speaking up; towards a important history.](https://policy.bristoluniversitypress.co.uk/intellectual-disability-in-the-twentieth-century) Published in "Intellectual Disability in the Twentieth Century"
+         + This was my first ever article that has been published in a book.</p>
+    </div>
+  </div>
 </div>
