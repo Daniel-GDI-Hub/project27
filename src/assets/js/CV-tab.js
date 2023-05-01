@@ -1,30 +1,16 @@
-'use strict';
-
-function Tabs() {
-  var bindAll = function() {
-    var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
-      menuElements[i].addEventListener('click', change, false);
-    }
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-
-  var clear = function() {
-    var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
-      menuElements[i].classList.remove('active');
-      var id = menuElements[i].getAttribute('data-tab');
-      document.getElementById(id).classList.remove('active');
-    }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-
-  var change = function(e) {
-    clear();
-    e.target.classList.add('active');
-    var id = e.currentTarget.getAttribute('data-tab');
-    document.getElementById(id).classList.add('active');
-  }
-
-  bindAll();
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 
-var connectTabs = new Tabs();
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
